@@ -14,7 +14,7 @@ async function bootstrap(): Promise<void> {
   const port = process.env.PORT ?? 3000;
 
   await app.listen(port);
-  logger.log(`Servidor iniciado en http://localhost:${port}`);
+  logger.log(`Servidor iniciado en http://localhost:${port}/graphql`);
 }
 
 void bootstrap();
